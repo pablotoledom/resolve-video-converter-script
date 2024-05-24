@@ -3,6 +3,8 @@ Script to convert any unsuported codec video for Blackmagicdesign Davinci Resolv
 
 This script converts all `.mp4` and `.mov` video files in a specified input directory to a specified output format using `ffmpeg`. The converted files are saved in a specified output directory.
 
+![alt Convertion example](https://github.com/pablotoledom/resolve-video-converter-script/blob/main/assets/converter.gif?raw=true)
+
 ## Usage
 
 ```bash
