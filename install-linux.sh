@@ -1,0 +1,1 @@
+sudo mv convert-videos.sh /usr/local/bin/convert-videos

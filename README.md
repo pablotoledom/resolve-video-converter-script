@@ -8,7 +8,7 @@ This script converts all `.mp4` and `.mov` video files in a specified input dire
 ## Usage
 
 ```bash
-./convert_videos.sh <input_directory> <output_directory> <output_format>
+./convert-videos.sh <input_directory> <output_directory> <output_format>
 ```
 
 ### Parameters
@@ -19,7 +19,7 @@ This script converts all `.mp4` and `.mov` video files in a specified input dire
 
 ## Example
 ```bash
-./convert_videos.sh /path/to/input /path/to/output mov
+./convert-videos.sh /path/to/input /path/to/output mov
 ```
 
 This command will convert all .mp4 and .mov files in /path/to/input to .mov format and save the converted files in /path/to/output.
@@ -51,7 +51,7 @@ sudo pacman -S ffmpeg
 ### Excecution permissions
 
 ```bash
-chmod +x convert_videos.sh
+chmod +x convert-videos.sh
 ```
 
 
