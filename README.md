@@ -54,6 +54,12 @@ sudo pacman -S ffmpeg
 chmod +x convert-videos.sh
 ```
 
+## Install
+Run install.sh, this script copies 'convert-videos.sh' to the /usr/local/bin/ directory.
+
+```bash
+./install.sh
+```
 
 ## Script Details
 
