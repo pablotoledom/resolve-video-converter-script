@@ -33,13 +33,13 @@ main() {
 
     local file
     while IFS= read -r -d $'\0' file; do
-        if [[ -f "$file" && ("${file##*.}" == "mp4" || "${file##*.}" == "mov") ]]; then
+        if [[ -f "$file" && ( "${file##*.}" == "mp4" || "${file##*.}" == "mov" || "${file##*.}" == "avi" ) ]]; then
             printf "Processing file: %s\n" "$file"
             if ! convert_video "$file"; then
                 printf "Failed to process %s\n" "$file" >&2
             fi
         fi
-    done < <(find "$INPUT_DIR" -type f \( -name '*.mp4' -o -name '*.mov' \) -print0)
+    done < <(find "$INPUT_DIR" -type f \( -iname '*.mp4' -o -iname '*.mov' -o -iname '*.avi' \) -print0)
 
     printf "All video files processed.\n"
 }
